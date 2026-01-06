@@ -7,12 +7,12 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: white;
     margin: 0px;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 1rem;
+    color: #1f1f1f;
     display: flex;
     flex-direction: column;
 }
@@ -21,18 +21,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px;
+    gap: 12px;
 }
 
 .left-links, .right-links {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.icons, .account {
-    max-width: 30px;
+#connect {
+    background: #0b57d0;
+    color: #eeeeee;
+    border-radius: 20px;
+    padding: 10px;
 }
+
 .footer {
     background-color: #eeeeee;
     display: flex;
@@ -45,11 +52,13 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 12px;
 
 }
 
 .left-bottom, .right-bottom{
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -59,12 +68,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    gap: 18px;
+    gap: 30px;
 }
 
 
 button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     border: none;
     border-radius: 8px;
     background: #eee;
@@ -75,8 +84,14 @@ button {
 input {
     border: 1px solid #ddd;
     border-radius: 16px;
-    padding: 8px 24px;
+    padding: 12px 20px;
     width: 650px;
+    max-width: 650px;
+    box-shadow: 1px 1px 10px 2px #cdcdcd;
+}
+
+input::placeholder {
+    color:#cdcdcd;
 }
 
 ul {
