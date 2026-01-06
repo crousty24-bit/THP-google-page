@@ -52,7 +52,7 @@ body {
     background-color: #eeeeee;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
 }
 
 .top {
@@ -67,7 +67,6 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 12px;
     gap: 12px;
 
 }
