@@ -43,6 +43,11 @@ body {
     box-shadow: 1px 1px 10px 2px blue;
 }
 
+.space {
+    display: flex;
+    flex-grow: 1;
+}
+
 .footer {
     background-color: #eeeeee;
     display: flex;
