@@ -12,25 +12,45 @@ body {
     margin: 0px;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.header, .footer {
+.header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 16px;
+    align-items: center;
+    padding: 20px;
 }
 
 .left-links, .right-links {
     display: flex;
-    gap: 16px;
-    padding: 0;
+    align-items: center;
+    gap: 30px;
 }
 
+.icons, .account {
+    max-width: 30px;
+}
 .footer {
     background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.left-bottom, .right-bottom{
+    display: flex;
+    gap: 12px;
 }
 
 .content {
@@ -57,7 +77,6 @@ input {
     border-radius: 16px;
     padding: 8px 24px;
     width: 650px;
-    box-shadow: black;
 }
 
 ul {
@@ -66,5 +85,5 @@ ul {
 
 a {
     text-decoration: none;
-    color: #666;
+    color: #1a1a1a;
 }
