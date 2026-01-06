@@ -9,9 +9,8 @@
 body {
     min-height: 100vh;
     background-color: white;
-    margin: 0px;
     font-family: 'Arial', sans-serif;
-    font-size: 1rem;
+    font-size: 14px;
     color: #1f1f1f;
     display: flex;
     flex-direction: column;
@@ -56,14 +55,28 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 12px;
     gap: 12px;
 
 }
 
 .left-bottom, .right-bottom{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
+}
+
+@media (max-width:768px){
+    .middle {
+    order: -1;
+    flex-basis: 100%;
+    }
+}
+    .middle {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
 }
 
 .content {
@@ -75,6 +88,10 @@ body {
     gap: 30px;
 }
 
+.logo {
+    max-width: 250px;
+    width: 250px;
+}
 
 button {
     font-family: 'Arial', sans-serif;
@@ -93,9 +110,9 @@ input {
     border: 1px solid #ddd;
     border-radius: 16px;
     padding: 12px 20px;
-    width: 650px;
-    max-width: 650px;
-    box-shadow: 1px 1px 10px 2px #cdcdcd;
+    width: 450px;
+    max-width: 450px;
+    box-shadow: 1px 1px 10px 1px #cdcdcd;
 }
 
 /*refer to attribute*/
